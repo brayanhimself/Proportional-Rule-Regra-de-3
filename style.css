@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --color-primary-1: #ffe53bd8;
+  --color-primary-2: #ff6a25da;
+
+  --color-neutral-1: #e5e7eb;
+  --color-neutral-2: #343434;
+  --color-neutral-3: #262626;
+  --linear-gradient: linear-gradient(120deg, var(--color-primary-1), var(--color-primary-2));
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--linear-gradient);
+}
+
+.calculator {
+  background-color: var(--color-neutral-3);
+  color: var(--color-neutral-1);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.323);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.input-container {
+  margin: 25px 0px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group input {
+  background-color: var(--color-neutral-2);
+  color: white;
+  padding: 8px;
+  border: 1px solid var(--color-primary-1);
+  border-radius: 4px;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-group span {
+  padding: 0px 8px;
+  background-color: var(--color-neutral-2);
+}
+
+.input-group p {
+  background: var(--linear-gradient);
+  border-radius: 5px;
+}
+
+.input-text {
+  padding: 10px 16px;
+}
+
+#result {
+  background: var(--linear-gradient);
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 100px;
+}
+
+#calculate {
+  background: linear-gradient(120deg, var(--color-primary-1), var(--color-primary-2));
+  color: white;
+  padding: 4px 16px;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
